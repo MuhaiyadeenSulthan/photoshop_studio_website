@@ -1,0 +1,156 @@
+/* Portfolio Page Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Consistent font for the page */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and nav */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 15px 30px; /* Increase padding */
+    background: linear-gradient(135deg, rgba(26, 188, 156, 0.8), rgba(22, 160, 133, 0.8)); /* Gradient background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: white;
+}
+
+.shop-name {
+    font-family: 'Sacramento', cursive;
+    font-size: 32px; /* Slightly larger font size */
+    color: #ffffff; /* Pure white for shop name */
+    margin: 10px;
+}
+
+.logo img {
+    height: 70px; /* Slightly larger logo */
+    width: auto;
+    margin-left: 10px; /* Add space between logo and shop name */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Increase space between links */
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; /* Add padding to links */
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle white overlay on hover */
+    color: #ffffff; /* Keep the text white on hover */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add text shadow for better readability */
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    margin-top: 30px;
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.portfolio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33% - 20px); /* Responsive 3-column layout with gap */
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-item-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.portfolio-item-info h3 {
+    font-family: 'Sacramento', cursive;
+    font-size: 1.5rem;
+    color: #1abc9c;
+    margin: 0 0 10px 0;
+}
+
+.portfolio-item-info p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Hover Effect for Portfolio Items */
+.portfolio-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(50% - 20px); /* Two-column layout for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-item {
+        width: 100%; /* Single column layout for mobile */
+    }
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Flamingo';
+    src: url('assets/fonts/Flamingo-Regular.woff2') format('woff2'),
+         url('assets/fonts/Flamingo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nautica';
+    src: url('path/to/nautica.woff2') format('woff2'),
+         url('path/to/nautica.woff') format('woff');
+}
